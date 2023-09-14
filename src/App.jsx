@@ -1,5 +1,5 @@
-
 import './App.css'
+import Header from './components/header/Header'
 
 function App() {
   
@@ -7,8 +7,12 @@ function App() {
   return (
     <>
       
-      <h1 className='text-5xl'>Vite + React</h1>
-      <h3>sdskf</h3>
+      <div className='bg-white h-[3000px]'>
+        <div className='container mx-auto'>
+          <Header></Header>
+        <hr className='w-11/12 mx-auto my-5' />
+        </div>
+      </div>
       
       
     </>
