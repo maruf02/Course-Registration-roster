@@ -4,7 +4,7 @@
     "courseName": "Introduction to Programming",
     "coverImg": "https://i.ibb.co/vvkvYCy/Rectangle-2.png",
     "courseDesc": "Learn the fundamentals of programming with this introductory course.",
-    "price": 49.99,
+    "price": 49,
     "credit": 3
   },
   {
@@ -12,7 +12,7 @@
     "courseName": "Web Development Bootcamp",
     "coverImg": "https://i.ibb.co/fHj8fzK/Rectangle-2-1.png",
     "courseDesc": "Become a web developer in 12 weeks with hands-on projects and exercises.",
-    "price": 199.99,
+    "price": 199,
     "credit": 6
   },
   {
@@ -20,7 +20,7 @@
     "courseName": "Data Science Essentials",
     "coverImg": "https://i.ibb.co/7GKxZSL/Rectangle-2-2.png",
     "courseDesc": "Explore data analysis, machine learning, and data visualization.",
-    "price": 129.99,
+    "price": 129,
     "credit": 4
   },
   {
@@ -28,7 +28,7 @@
     "courseName": "Digital Marketing Mastery",
     "coverImg": "https://i.ibb.co/b3Q5hkH/Rectangle-2-3.png",
     "courseDesc": "Master the art of digital marketing and grow your online presence.",
-    "price": 79.99,
+    "price": 79,
     "credit": 5
   },
   {
@@ -36,7 +36,7 @@
     "courseName": "Graphic Design Fundamentals",
     "coverImg": "https://i.ibb.co/41GdWXR/Rectangle-2-4.png",
     "courseDesc": "Learn the basics of graphic design and create stunning visuals.",
-    "price": 59.99,
+    "price": 59,
     "credit": 3
   },
   {
@@ -44,7 +44,7 @@
     "courseName": "Financial Planning and Investment",
     "coverImg": "https://i.ibb.co/Q6WvjYx/Rectangle-2-5.png",
     "courseDesc": "Plan your financial future and make informed investment decisions.",
-    "price": 149.99,
+    "price": 149,
     "credit": 4
   },
   {
@@ -52,7 +52,7 @@
     "courseName": "Artificial Intelligence: Theory and Practice",
     "coverImg": "https://i.ibb.co/P53rm76/Rectangle-2-6.png",
     "courseDesc": "Dive into AI concepts and build AI applications from scratch.",
-    "price": 179.99,
+    "price": 179,
     "credit": 6
   },
   {
@@ -60,7 +60,7 @@
     "courseName": "Business Ethics and Corporate Responsibility",
     "coverImg": "https://i.ibb.co/KXGZq0K/Rectangle-3.png",
     "courseDesc": "Explore ethical decision-making in the business world.",
-    "price": 69.99,
+    "price": 69,
     "credit": 3
   },
   {
@@ -68,7 +68,7 @@
     "courseName": "Advanced Java Programming",
     "coverImg": "https://i.ibb.co/SxCRwSs/Rectangle-3-1.png",
     "courseDesc": "Take your Java skills to the next level with advanced topics.",
-    "price": 89.99,
+    "price": 89,
     "credit": 4
   }
 ]

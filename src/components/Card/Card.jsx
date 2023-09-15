@@ -1,37 +1,40 @@
 import PropTypes from "prop-types";
 import dollar from "../../assets/dollar.png";
-import credit from "../../assets/Frame.png";
+import creditt from "../../assets/Frame.png";
 
-const Card = ({ card }) => {
-  console.log(card);
-  const { courseName } = card;
+const Card = ({ card, handleAddToCartDetails, handleCredit, handlePrice }) => {
+  //   console.log(card);
+  const { courseName, coverImg, courseDesc, price, credit } = card;
   return (
     <div>
-      <h1>{courseName}</h1>
       <div className="card card-compact w-11/12 bg-white shadow-xl">
         <figure>
-          <img
-            src="https://i.ibb.co/vvkvYCy/Rectangle-2.png"
-            alt="Course Image"
-          />
+          <img src={coverImg} alt="Course Image {courseName}" />
         </figure>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title ">{courseName}</h2>
-          <p>
-            Learn the fundamentals of programming with this introductory course.
-          </p>
-          <div className="flex gap-8 pt-4">
-            <div className="flex gap-3">
+        <div className="card-body ">
+          <h2 className="text-black text-lg font-bold">{courseName}</h2>
+          <p className="text-black text-sm">{courseDesc}</p>
+          <div className="flex gap-6 pt-4">
+            <div className="flex gap-1">
               <img src={dollar} alt="" />
-              <p> Price: 15000</p>
+              <p className="text-black text-base"> Price: {price}</p>
             </div>
-            <div className="flex gap-3">
-              <img src={credit} alt="" />
-              <p> Credit: 1hr</p>
+            <div className="flex gap-1">
+              <img src={creditt} alt="" />
+              <p className="text-black text-base"> Credit: {credit}hr</p>
             </div>
           </div>
           <div className="card-actions mt-5 ">
-            <button className="btn btn-primary w-64 h-10 ">Buy Now</button>
+            <button
+              onClick={() => {
+                handleAddToCartDetails(card);
+                handleCredit(credit);
+                handlePrice(price);
+              }}
+              className="btn btn-primary w-64 h-10 "
+            >
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
@@ -41,6 +44,7 @@ const Card = ({ card }) => {
 
 Card.propTypes = {
   card: PropTypes.object.isRequired,
+  handleAddToCartDetails: PropTypes.func,
 };
 
 export default Card;
