@@ -29,7 +29,7 @@ const Card = ({ card, handleAddToCartDetails, handleCredit, handlePrice }) => {
               onClick={() => {
                 handleAddToCartDetails(id, card, credit);
                 handleCredit(id, credit);
-                handlePrice(id, price);
+                handlePrice(id, price, credit);
               }}
               className="btn btn-primary w-3/4 h-10 mx-auto "
             >

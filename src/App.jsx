@@ -3,6 +3,8 @@ import Header from "./components/header/Header";
 import Cards from "./components/Cards/Cards";
 import CartDetails from "./components/CourseCartDetails/CartDetails";
 import { useState } from "react";
+//
+import Swal from "sweetalert2";
 
 function App() {
   const [cartDetails, setCartDetails] = useState([]);
@@ -25,13 +27,14 @@ function App() {
       // console.log(cartHour);
       console.log("credit", credit);
       const tempCartCredit = cartCredit + credit;
-      if (tempCartCredit < 20) {
+      if (tempCartCredit <= 20) {
         setCartDetails(newCartDetails);
       } else {
-        alert("oh no2 credit");
+        // alert("sorry!! you have only ");
       }
     } else {
-      alert("Sorry!! Already added it");
+      // alert("Sorry!! Already added it.Add another");
+      Swal.fire("Sorry!! Already added it.Add another One.");
       console.log(countDuplicate);
     }
     console.log("ok1", cartCredit);
@@ -47,14 +50,18 @@ function App() {
       // console.log(cartHour);
       const tempCartCredit = cartCredit + credit;
       console.log("tempCartCredit", tempCartCredit);
-      if (tempCartCredit < 20) {
+      if (tempCartCredit <= 20) {
         const newCartCredit = cartCredit + credit;
-        // console.log("ok1", newCartCredit);
+
         setCartCredit(newCartCredit);
         // const newCartHour = 20 - (cartHour - newCartCredit);
         const newCartHour = 20 - newCartCredit;
         setCartHour(newCartHour);
-        // console.log("ok2", newCartHour);
+      } else {
+        // alert(`sorry!! you have only ${cartHour}hr left`);
+        Swal.fire(
+          `Sorry!! you have already ${cartCredit}hr & only ${cartHour}hr left !!`
+        );
       }
     } else {
       // setCartCredit(cartCredit);
@@ -62,21 +69,18 @@ function App() {
     }
   };
 
-  const handlePrice = (id, price) => {
+  const handlePrice = (id, price, credit) => {
     const cartIDV = cartDetails.map((cartDetail) => cartDetail.id);
-    // console.log("id array", cartIDV);
     const countDuplicate = cartIDV.filter((dulpct) => dulpct === id).length;
-    // console.log(typeof countDuplicate);
     if (countDuplicate === 0) {
-      const newCartPrice = cartPrice + price;
-      setCartPrice(newCartPrice);
-      // console.log("ok");
-    } else {
-      // setCartCredit(cartCredit);
-      // console.log("not ok");
+      // console.log(cartHour);
+      const tempCartCredit = cartCredit + credit;
+      console.log("tempCartCredit", tempCartCredit);
+      if (tempCartCredit <= 20) {
+        const newCartPrice = cartPrice + price;
+        setCartPrice(newCartPrice);
+      }
     }
-
-    // console.log("object", price);
   };
 
   return (
