@@ -27,9 +27,9 @@ const Card = ({ card, handleAddToCartDetails, handleCredit, handlePrice }) => {
           <div className="card-actions mt-5 ">
             <button
               onClick={() => {
-                handleAddToCartDetails(id, card);
-                handleCredit(credit);
-                handlePrice(price);
+                handleAddToCartDetails(id, card, credit);
+                handleCredit(id, credit);
+                handlePrice(id, price);
               }}
               className="btn btn-primary w-3/4 h-10 mx-auto "
             >
