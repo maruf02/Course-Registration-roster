@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Card from "../Card/Card";
 
-const Cards = ({ handleAddToCartDetails, handleCredit, handlePrice }) => {
+const Cards = ({ id, handleAddToCartDetails, handleCredit, handlePrice }) => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {

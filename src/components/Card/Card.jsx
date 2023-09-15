@@ -4,7 +4,7 @@ import creditt from "../../assets/Frame.png";
 
 const Card = ({ card, handleAddToCartDetails, handleCredit, handlePrice }) => {
   //   console.log(card);
-  const { courseName, coverImg, courseDesc, price, credit } = card;
+  const { id, courseName, coverImg, courseDesc, price, credit } = card;
   return (
     <div>
       <div className="card card-compact w-11/12 bg-white shadow-xl">
@@ -27,11 +27,11 @@ const Card = ({ card, handleAddToCartDetails, handleCredit, handlePrice }) => {
           <div className="card-actions mt-5 ">
             <button
               onClick={() => {
-                handleAddToCartDetails(card);
+                handleAddToCartDetails(id, card);
                 handleCredit(credit);
                 handlePrice(price);
               }}
-              className="btn btn-primary w-64 h-10 "
+              className="btn btn-primary w-3/4 h-10 mx-auto "
             >
               Buy Now
             </button>

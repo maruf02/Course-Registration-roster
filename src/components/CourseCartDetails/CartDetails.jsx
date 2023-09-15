@@ -1,9 +1,18 @@
 import React from "react";
 import CartDetail from "../CartDetail/CartDetail";
 
-const CartDetails = ({ cartDetails, cartCredit, cartPrice, cartHour }) => {
-  console.log(cartDetails);
-  const { credit, price } = cartDetails;
+const CartDetails = ({ id, cartDetails, cartCredit, cartPrice, cartHour }) => {
+  // console.log(cartDetails);
+  const cartIDV = [];
+  cartDetails.map((cartDetail) => {
+    const cartid = cartDetail.id;
+    cartIDV.push(cartid);
+    // console.log("Click Id", id);
+  });
+  // console.log("cartIdP", cartIDV);
+  // console.log("Click Id", id);
+  // const isTrue = cartIDV
+  // cartIDV.includes(cartid)
 
   return (
     <div className="w-full  lg:w-1/4 py-5 ">

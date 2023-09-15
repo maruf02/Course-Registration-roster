@@ -5,7 +5,7 @@ const CartDetail = ({ cartDetail }) => {
   //   console.log(id);
   let arr = [];
   let newarr = arr.push(id);
-  console.log("111", newarr);
+  // console.log("111", newarr);
   return (
     <div>
       <li>{courseName}</li>

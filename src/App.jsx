@@ -10,9 +10,18 @@ function App() {
   const [cartPrice, setCartPrice] = useState(0);
   const [cartHour, setCartHour] = useState(20);
 
-  const handleAddToCartDetails = (card) => {
+  const handleAddToCartDetails = (id, card) => {
     const newCartDetails = [...cartDetails, card];
     setCartDetails(newCartDetails);
+    // console.log("hh", newCartDetails);
+    // console.log("click id", id);
+    const cartIDV = [];
+    newCartDetails.map((cartDetail) => {
+      const cartid = cartDetail.id;
+      cartIDV.push(cartid);
+    });
+    // console.log("id array", cartIDV);
+    // const exit
   };
 
   const handleCredit = (credit) => {
