@@ -1,27 +1,7 @@
 import React from "react";
 import CartDetail from "../CartDetail/CartDetail";
-import { useState } from "react";
 
 const CartDetails = ({ id, cartDetails, cartCredit, cartPrice, cartHour }) => {
-  // const [cartRHour, setCartRHour] = useState(20);
-  // const handleRemainingHour = (credit) => {
-  //   // console.log("cartCredit", cartCredit);
-  //   const newCartRHour = cartHour - cartCredit;
-  //   setCartRHour(newCartRHour);
-  //   console.log("cartCredit", cartCredit);
-  // };
-  // console.log(cartDetails);
-  // const cartIDV = [];
-  // cartDetails.map((cartDetail) => {
-  //   const cartid = cartDetail.id;
-  //   cartIDV.push(cartid);
-  // console.log("Click Id", id);
-  // });
-  // console.log("cartIdP", cartIDV);
-  // console.log("Click Id", id);
-  // const isTrue = cartIDV
-  // cartIDV.includes(cartid)
-  // console.log("object", 20 - cartCredit);
   const cartRemainHourTotal = 20;
   let cartRemainHour = cartRemainHourTotal - cartCredit;
 

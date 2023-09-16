@@ -2,14 +2,7 @@ import PropTypes from "prop-types";
 import dollar from "../../assets/dollar.png";
 import creditt from "../../assets/Frame.png";
 
-const Card = ({
-  card,
-  handleAddToCartDetails,
-  handleCredit,
-  handlePrice,
-  handleRemainingHour,
-}) => {
-  //   console.log(card);
+const Card = ({ card, handleAddToCartDetails, handleCredit, handlePrice }) => {
   const { id, courseName, coverImg, courseDesc, price, credit } = card;
   return (
     <div>
@@ -36,7 +29,6 @@ const Card = ({
                 handleAddToCartDetails(id, card, credit);
                 handleCredit(id, credit);
                 handlePrice(id, price, credit);
-                // handleRemainingHour(credit);
               }}
               className="btn btn-primary w-3/4 h-10 mx-auto "
             >
