@@ -40,7 +40,7 @@ const Card = ({
               }}
               className="btn btn-primary w-3/4 h-10 mx-auto "
             >
-              Buy Now
+              Select
             </button>
           </div>
         </div>

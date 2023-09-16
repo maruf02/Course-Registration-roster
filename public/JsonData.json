@@ -1,73 +1,73 @@
 [
   {
     "id": 1,
-    "courseName": "Introduction to Programming",
+    "courseName": "Introduction to OOP Python",
     "coverImg": "https://i.ibb.co/vvkvYCy/Rectangle-2.png",
-    "courseDesc": "Learn the fundamentals of programming with this introductory course.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 49,
     "credit": 3
   },
   {
     "id": 2,
-    "courseName": "Web Development Bootcamp",
+    "courseName": "Database (MySQL)",
     "coverImg": "https://i.ibb.co/fHj8fzK/Rectangle-2-1.png",
-    "courseDesc": "Become a web developer in 12 weeks with hands-on projects and exercises.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 199,
     "credit": 6
   },
   {
     "id": 3,
-    "courseName": "Data Science Essentials",
+    "courseName": "Introduce to C Programming",
     "coverImg": "https://i.ibb.co/7GKxZSL/Rectangle-2-2.png",
-    "courseDesc": "Explore data analysis, machine learning, and data visualization.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 129,
     "credit": 4
   },
   {
     "id": 4,
-    "courseName": "Digital Marketing Mastery",
+    "courseName": "Introduction to Algorithms",
     "coverImg": "https://i.ibb.co/b3Q5hkH/Rectangle-2-3.png",
-    "courseDesc": "Master the art of digital marketing and grow your online presence.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 79,
     "credit": 5
   },
   {
     "id": 5,
-    "courseName": "Graphic Design Fundamentals",
+    "courseName": "Introduction to C++ for DSA",
     "coverImg": "https://i.ibb.co/41GdWXR/Rectangle-2-4.png",
-    "courseDesc": "Learn the basics of graphic design and create stunning visuals.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 59,
     "credit": 1
   },
   {
     "id": 6,
-    "courseName": "Financial Planning and Investment",
+    "courseName": "Software Engineering",
     "coverImg": "https://i.ibb.co/Q6WvjYx/Rectangle-2-5.png",
-    "courseDesc": "Plan your financial future and make informed investment decisions.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 149,
     "credit": 4
   },
   {
     "id": 7,
-    "courseName": "Artificial Intelligence: Theory and Practice",
+    "courseName": "Problem-Solving Part",
     "coverImg": "https://i.ibb.co/P53rm76/Rectangle-2-6.png",
-    "courseDesc": "Dive into AI concepts and build AI applications from scratch.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 179,
     "credit": 6
   },
   {
     "id": 8,
-    "courseName": "Business Ethics and Corporate Responsibility",
+    "courseName": "Basic Data Structures",
     "coverImg": "https://i.ibb.co/KXGZq0K/Rectangle-3.png",
-    "courseDesc": "Explore ethical decision-making in the business world.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 69,
     "credit": 2
   },
   {
     "id": 9,
-    "courseName": "Advanced Java Programming",
+    "courseName": "AWS, Cloud Computing",
     "coverImg": "https://i.ibb.co/SxCRwSs/Rectangle-3-1.png",
-    "courseDesc": "Take your Java skills to the next level with advanced topics.",
+    "courseDesc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 89,
     "credit": 4
   }

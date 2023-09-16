@@ -26,7 +26,7 @@ const CartDetails = ({ id, cartDetails, cartCredit, cartPrice, cartHour }) => {
   let cartRemainHour = cartRemainHourTotal - cartCredit;
 
   return (
-    <div className="w-full  lg:w-1/4 py-5 ">
+    <div className="w-full px-8 md:mx-auto md:w-1/2 lg:px-0 lg:w-1/4 py-5 ">
       <p className="text-[#2F80ED] text-base font-bold pb-6">
         Credit Hour Remaining: {cartHour} hr
       </p>
