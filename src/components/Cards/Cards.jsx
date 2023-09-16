@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Card from "../Card/Card";
 
-const Cards = ({ id, handleAddToCartDetails, handleCredit, handlePrice }) => {
+const Cards = ({
+  id,
+  handleAddToCartDetails,
+  handleCredit,
+  handlePrice,
+  handleRemainingHour,
+}) => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -21,6 +27,7 @@ const Cards = ({ id, handleAddToCartDetails, handleCredit, handlePrice }) => {
           handleAddToCartDetails={handleAddToCartDetails}
           handleCredit={handleCredit}
           handlePrice={handlePrice}
+          // handleRemainingHour={handleRemainingHour}
         ></Card>
       ))}
     </div>
